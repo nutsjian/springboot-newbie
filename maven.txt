@@ -1,0 +1,3 @@
+mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-aop -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local -Dversion=0.0.1 -X
+mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-async -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local -Dversion=0.0.1 -X
+
