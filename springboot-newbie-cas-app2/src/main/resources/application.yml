@@ -1,0 +1,7 @@
+logging:
+  file: "logs/app2.log"
+info:
+  name : "App2项目"
+server:
+  port: 9292
+  address: app2.com

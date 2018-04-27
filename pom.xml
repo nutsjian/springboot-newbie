@@ -75,5 +75,8 @@
     <modules>
     <module>springboot-newbie-async</module>
     <module>springboot-newbie-aop</module>
+    <module>springboot-newbie-cas-app1</module>
+    <module>springboot-newbie-cas-app2</module>
+    <module>springboot-newbie-thymeleaf</module>
   </modules>
 </project>

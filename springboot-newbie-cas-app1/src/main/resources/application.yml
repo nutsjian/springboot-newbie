@@ -1,0 +1,7 @@
+logging:
+  file: "logs/app1.log"
+info:
+  name : "App1项目"
+server:
+  port: 9191
+  address: app1.com

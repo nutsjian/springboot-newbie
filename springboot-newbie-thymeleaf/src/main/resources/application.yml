@@ -1,0 +1,11 @@
+server:
+  port: 22222
+spring:
+  thymeleaf:
+    cache: false
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML5
+#    encoding: UTF-8
+#    content-type: text/html
+#    注释的部分是Thymeleaf默认的配置，如有其它需求可以自行更改

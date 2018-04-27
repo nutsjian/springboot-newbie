@@ -1,0 +1,11 @@
+https://github.com/kolorobot/thymeleaf-custom-layout
+
+http://www.cnblogs.com/zheting/p/6707037.html
+
+https://blog.csdn.net/u014042066/article/details/75614906
+
+
+cas 5.2.x
+https://blog.csdn.net/Ideality_hunter/article/details/52168457
+https://gitee.com/Kawhi-Carl/sso/tree/1.6.0-RC3/sso-server
+http://www.ibloger.net/article/3125.html
