@@ -1,6 +1,6 @@
 package me.nutsjian.springboot.newbie.controller;
 
-import me.nutsjian.springboot.newbie.support.Layout;
+import me.nutsjian.springboot.newbie.annotation.Layout;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

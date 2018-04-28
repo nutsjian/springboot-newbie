@@ -1,0 +1,9 @@
+server:
+  port: 22223
+web:
+  upload-path: c:/nutsjian/develop_upload/
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/web/build/, file:${web.upload-path}

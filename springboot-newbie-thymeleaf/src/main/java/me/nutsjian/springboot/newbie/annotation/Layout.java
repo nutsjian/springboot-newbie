@@ -1,4 +1,4 @@
-package me.nutsjian.springboot.newbie.support;
+package me.nutsjian.springboot.newbie.annotation;
 
 import java.lang.annotation.*;
 

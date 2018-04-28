@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="/common/css/common.css" rel="stylesheet" />
+<head th:fragment="subcss">
     <title>用户列表</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>姓名</th>
-            <th>年龄</th>
-            <th>职业</th>
-            <th>薪资</th>
-        </tr>
-        <!--/*@thymesVar id="users" type="java.util.ArrayList<User>"*/-->
-        <tr th:each="user : ${users}">
-            <td th:text="${user.id}"></td>
-            <td th:text="${user.name}"></td>
-            <td th:text="${user.age}"></td>
-            <td th:text="${user.career}"></td>
-            <td th:text="${user.salary}"></td>
-        </tr>
-    </table>
+    <div th:fragment="content" class="userlist">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>职业</th>
+                <th>薪资</th>
+            </tr>
+            <!--/*@thymesVar id="users" type="java.util.ArrayList<User>"*/-->
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.age}"></td>
+                <td th:text="${user.career}"></td>
+                <td th:text="${user.salary}"></td>
+            </tr>
+        </table>
 
-    <select>
-        <!--/*@thymesVar id="users" type="java.util.ArrayList<User>"*/-->
-        <option th:each="user:${users}" th:value="${user.id}" th:text="${user.name}">我是默认值</option>
-    </select>
+        <select>
+            <!--/*@thymesVar id="users" type="java.util.ArrayList<User>"*/-->
+            <option th:each="user:${users}" th:value="${user.id}" th:text="${user.name}">我是默认值</option>
+        </select>
+    </div>
 </body>
-<script src="/common/js/vue.min.js"></script>
-<script th:inline="javascript">
-    console.log('colsone log.....')
+<script th:fragment="subscript" src="/static/common/js/vue.min.js"></script>
+<script th:fragment="subscript" th:inline="javascript">
+    console.log('colsone userlist.....')
 </script>
 </html>

@@ -1,6 +1,6 @@
 package me.nutsjian.springboot.newbie.interceptor;
 
-import me.nutsjian.springboot.newbie.support.Layout;
+import me.nutsjian.springboot.newbie.annotation.Layout;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 

@@ -1,17 +1,18 @@
 package me.nutsjian.springboot.newbie.controller;
 
-import me.nutsjian.springboot.newbie.support.Layout;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "error")
-public class ErrorController {
+@RequestMapping(value = "/order", produces = "application/json;charset=utf-8")
+public class OrderController {
 
-    @Layout(value = Layout.NONE)
     @GetMapping
-    public String error() {
-        return "error/index";
+    @ResponseBody
+    public String rest() {
+        return "ok order rest";
     }
+
 }

@@ -19,6 +19,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
 
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // 静态资源配置
         registry.addResourceHandler("/static/**/*.js").addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/static/**/*.css").addResourceLocations("classpath:/static/");
     }

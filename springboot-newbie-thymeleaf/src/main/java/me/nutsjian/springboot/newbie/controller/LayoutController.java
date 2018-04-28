@@ -1,6 +1,6 @@
 package me.nutsjian.springboot.newbie.controller;
 
-import me.nutsjian.springboot.newbie.support.Layout;
+import me.nutsjian.springboot.newbie.annotation.Layout;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,8 +27,14 @@ public class LayoutController {
         return "layout_demo/include";
     }
 
+    @Layout(value = Layout.NONE)
+    @GetMapping(value = "none")
+    public String noneLayout() {
+        return "layout_demo/none";
+    }
+
     @GetMapping(value = "500")
     public String error500() {
-        throw new RuntimeException("1231231");
+        throw new RuntimeException("just throw exception");
     }
 }
