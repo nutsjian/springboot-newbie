@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="subcss">
+    <link href="/static/common/css/basic.css" rel="stylesheet" />
+    <title>基础布局</title>
+</head>
+<body>
+<div th:fragment="content" class="layout_demo">
+    <p class="basic">Using default layout，我来自 layout_demo/basic </p>
+</div>
+</body>
+    <script th:fragment="subscript" src="/static/common/js/vue.min.js"></script>
+    <script th:fragment="subscript" th:inline="javascript">
+        console.log('colsone log.....')
+    </script>
+</html>
+

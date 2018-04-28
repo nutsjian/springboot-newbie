@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入公共样式 -->
+    <link href="/static/common/css/common.css" rel="stylesheet" />
+    <!-- 下面各个页面引入自己的样式 -->
+    <!--/*@thymesVar id="view" type="java.lang.String"*/-->
+    <div th:replace="${view} :: subcss"></div>
+</head>
+<body>
+<div th:replace="fragments/header :: header">Header goes here!</div>
+<!--/*@thymesVar id="view" type="java.lang.String"*/-->
+<div th:replace="${view} :: content" th:class="default-content">Content goes here!</div>
+<div th:replace="fragments/footer :: footer">Footer goes here!</div>
+</body>
+<!-- 引入公共js脚本 -->
+<script src="/static/common/js/jquery-3.3.1.min.js"></script>
+<!-- 下面各个页面引入自己的js脚本 -->
+<!--/*@thymesVar id="view" type="java.lang.String"*/-->
+<div th:insert="~{${view} :: subscript}"></div>
+</html>
