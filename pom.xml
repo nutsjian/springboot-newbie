@@ -80,5 +80,6 @@
     <module>springboot-newbie-thymeleaf</module>
     <module>springboot-newbie-static</module>
     <module>springboot-newbie-static-vuejs</module>
+    <module>springboot-newbie-jooq</module>
   </modules>
 </project>

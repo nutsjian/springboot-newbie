@@ -12,3 +12,9 @@ mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-stat
 
 # 这个项目是结合 springboot 静态资源目录，配合 webpack vuejs，前端用 vuejs + html 做成 SPA 应用，页面渲染的数据都通过 Restful 接口 ajax 获取
 mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-static-vuejs -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local -Dversion=0.0.1 -X
+
+# 这个项目是结合 springboot 和 jooq
+mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-jooq -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local -Dversion=0.0.1 -X
+
+# 这个项目是验证 start-web 模块的一些功能
+mvn archetype:generate -DgroupId=me.nutsjian -DartifactId=springboot-newbie-web -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local -Dversion=0.0.1 -X

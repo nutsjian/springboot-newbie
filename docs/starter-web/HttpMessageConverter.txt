@@ -1,0 +1,17 @@
++----------------+
+|                                                                       <------------->     HttpRequest     <---------------->
+|
+|
+|
+|   Object       |     <------------->       HttpMessageConverter                                                                       TCP 字节流
+|
+|
+|                                                                       <------------->     HttpResponse    <---------------->
+|
++----------------+
+
+
+Http协议的处理过程是：TCP 字节流    <----->     HttpRequest/HttpResponse    <----->     内部对象，就涉及两种序列化。在Spring中第一步 TCP -> HttpRequest/HttpResponse
+已经由Servlet容器（Tomcat等）帮我们处理了。第二部主要由框架帮我们处理。
+
+springmvc 中进行的第二部操作，其核心就是 HttpMessageConverter。
